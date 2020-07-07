@@ -4,7 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Converter App</title>
+    <link rel="stylesheet" href="css/style.css">
 <body>
-    <script src="moneyConverterapp.js"/>
+
+    <h1> Money Converter</h1>
+<div class="currencySection">
+    <input type="number" id="amountInput" /> 
+    <button onclick="convert()">Convert!</button>
+
+    <select id="from" name="fromCurrency">
+        <option value="usd">USD</option>
+        <option value="vnd">VND</option>
+        <option value="eur">EUR</option>
+        <option value="krw">KRW</option>
+      </select>
+
+      <h3>To</h3>
+
+      <form id="to" name="toCurrency" action="">
+        <input type="radio" name="toCurrency" value="toUsd"> USD<br>
+        <input type="radio" name="toCurrency" value="toVnd"> VND<br>
+        <input type="radio" name="toCurrency" value="toEur"> EUR<br>
+        <input type="radio" name="toCurrency" value="toKrw"> KRW<br>
+      </form>
+
+      <!-- <select id="to" name="toCurrency">
+        <option value="toUsd">USD</option>
+        <option value="toVnd">VND</option>
+        <option value="toEur">EUR</option>
+        <option value="toKrw">KRW</option>
+      </select> -->
+    
+</div>
+    <h2 id="resultConvert">Result will be here</h2>
+
+
+
+    <script src="moneyConverterapp.js"></script>
+
 </body>
 </html>
