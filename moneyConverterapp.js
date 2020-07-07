@@ -1,6 +1,6 @@
 const exchange = 23208
 let currency = prompt("Change to VND or USD?")
-// let amount = prompt("How much?")
+
 
 function vndToUsd(amountVnd) {
   amount = (amountVnd / exchange)
@@ -44,5 +44,3 @@ else if(currency.toLowerCase() === 'usd') {
 else {
   console.log ('Please choose VND or USD')
 }
-
-
